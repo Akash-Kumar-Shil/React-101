@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+}
+
+.output {
+    font-size: 8rem;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 20rem;
+    border: 1px solid var(--bd-c);
+    border-radius: var(--bd-r);
+    padding: var(--pd-2);
+    background-color: var(--bg-d);
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--prime);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    filter: brightness(85%);
+}
+
+/* Style for the selected (active) button */
+button.selected {
+    width: 12rem;
+    height: 4rem;
+    font-size: 2rem;
+}
+
+/* Optional: Reset button specific style */
+.reset {
+    background-color: tomato;
+}
