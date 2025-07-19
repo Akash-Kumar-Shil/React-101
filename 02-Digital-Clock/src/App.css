@@ -1,0 +1,11 @@
+.digital-clock {
+    color: var(--prime);
+    font-size: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+    .digital-clock {
+        font-size: 3rem;
+    }
+    
+}
