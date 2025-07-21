@@ -1,0 +1,83 @@
+.container {
+  max-width: 25rem;
+  border: 1px solid var(--bd-c);
+  border-radius: var(--bd-r-1);
+  padding: var(--pd);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pd);
+}
+
+.profile-img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--bd-r-1);
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pd);
+  border-radius: var(--bd-r-1);
+  padding: var(--pd);
+  background-color: var(--bg-d);
+  color: var(fg-1);
+}
+
+.text-box h1 {
+  font-size: 1.8rem;
+}
+
+.text-box h3 {
+  color: var(--prime);
+  font-weight: 200;
+}
+
+.text-box p {
+  color: var(--fg);
+  font-weight: 100;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media button {
+  height: 3rem;
+  border: none;
+  border-radius: var(--bd-r);
+  padding: var(--pd);
+  /* background-color: var(--prime);
+  color: var(--bg-l); */
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.social-media button:hover {
+  background-color: var(--prime-2);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.social-media button:active {
+  filter: drop-shadow(0 0 0.5rem var(--prime-1));
+  transform: scale(0.95);
+}
+
+.container:has(.social-media button:active) {
+  border: 1px solid var(--prime-2);
+}
+
+.Follow {
+  background-color: var(--prime) !important;
+}
+
+.Following {
+  background-color: var(--prime-2) !important;
+}

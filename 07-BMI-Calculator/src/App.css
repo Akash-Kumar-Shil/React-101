@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 30rem;
+  width: 100%;
+  border: 1px solid var(--bd-c);
+  border-radius: var(--bd-r);
+  padding: var(--pd);
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pd);
+}
+
+.optionBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.optionBox > label {
+  font-size: 1.25rem;
+}
+
+.optionBox > input, select {
+  height: 2.5rem;
+  max-width: 8rem;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid var(--bd-c);
+}
+
+.operationBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pd);
+}
+
+input[type="number"] {
+  border: 1px solid var(--bd-c);
+  border-radius: var(--bd-r);
+  padding: var(--pd);
+  background-color: var(--bg-d);
+  color: var(--fg);
+}
+
+select {
+  border: 1px solid var(--bd-c);
+  border-radius: var(--bd-r);
+  padding: var(--pd);
+  background-color: var(--bg-d);
+  color: var(--fg);
+}
+
+.resultBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pd);
+}
+
+.result {
+  color: var(--prime);
+  font-size: 2rem;
+  font-weight: bold;
+}
